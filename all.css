@@ -5,6 +5,7 @@
     background-color: black;
     color: white;
     font-family: "Lexend", sans-serif ;
+    overflow-x: auto;
     overflow-y: auto;}
     
     .header{background-color: black;
@@ -148,12 +149,12 @@
                 height: 100px;
                 width: 100%;
                 margin-right: auto;
-                margin-left: 20%;
+                margin-left: 12%;
                 list-style: none;
                 text-decoration: none; 
                 margin-right: auto;
                 margin-top: auto;}
                 .footer a{text-decoration: none;
                 color: white;}    
-              
+              .footer li{justify-content: center;}
             }
