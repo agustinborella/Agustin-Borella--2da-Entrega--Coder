@@ -1,0 +1,158 @@
+*{margin:0;
+    box-sizing: border-box;}
+    
+    body{font-family: sans-serif;
+    background-color: black;
+    color: white;
+    font-family: "Lexend", sans-serif ;
+    overflow-y: auto;}
+    
+    .header{background-color: black;
+    color: white;
+    border: 2px;
+    border-style: solid;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left:0;
+}
+    
+    .nav{display: flex;
+    justify-content:center;
+    max-width: 992px;
+    margin: 0 auto;}
+    
+    .nav-link{color: white;
+    text-decoration: none;}
+    
+    .nav-link-icons{color: white;
+        text-decoration: none;
+    font-size: xx-large;
+    padding: 0 5px;}
+        
+    
+    .logo_name img{width: 300px;
+        height: 33px;
+    font-weight: bold;
+    padding: 0 50px;
+    margin-top: 20px;
+    line-height: 80px;}
+    
+    .nav-menu{display: flex;
+    margin-right: 40px;
+    list-style: none;}
+    
+    .nav-menu-item{font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;}
+    
+    .nav-menu-link{padding: 8px 12px;
+    border-radius: 3px;}
+    .nav-menu-link:hover{background-color: grey;
+    transition: 0.5s;}
+    .nav-link-icons:hover{color: grey;
+        transition: 0.5s;}
+    
+    .nav-toggle{color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    display: none;
+    cursor: pointer;
+    }
+    
+    .middle{display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;}
+
+    .footer{display: flex;
+    margin-bottom: 0%;
+    margin-left: 35%;
+    margin-right: 35%;
+    min-width: 400px;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    text-decoration: none; 
+    padding: 20px;}
+    .footer a{text-decoration: none;
+    color: white;}    
+
+
+    @media (max-width:668px){
+            body{padding-top: 70px;}
+            .header{background-color: black;
+            height: 60px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left:0;}
+            .nav{justify-content: center;}
+            .logo img{display: block;
+                align-items: center;
+            justify-content: center;}
+
+            .nav-link-icons{color: white;
+            text-decoration: none;
+            font-size: xx-large;
+            padding: 0 5px;}
+                
+
+            .nav-menu{
+            flex-direction: column;
+            align-items: center;
+            margin-right: 0;
+            list-style: none;
+            background-color: rgb(49, 46, 46);
+            position: fixed;
+            left: 0;
+            top: 60px;
+            width:100%;
+            padding: 0;
+            height: calc(100%-60px);
+            overflow-y: auto;
+            left: 100%;
+            transition:left 0.3s;
+            }
+            
+            .nav-menu-item{font-size: 18px;
+            margin: 0 10px;
+            line-height: 70px;
+            text-transform: uppercase;
+            width: max-content;}
+            
+            .nav-menu-link{padding: 8px 12px;
+            border-radius: 3px;}
+            .nav-menu-link, .nav-link-icons:hover{background: none;
+            color: darkgray;
+            transition: 0.5s;}
+           
+            .nav-toggle{display: block;}
+            .nav-menu_visible{left: 0;}
+            .middle{flex-direction: column;
+            margin-top: 0%;
+            margin-left: 1.5%;
+            width:fit-content ;
+            align-items: center;
+            justify-content: center;}
+        
+            .footer{display: flex;
+                justify-content: space-between;
+                align-items:center  ;
+                height: 100px;
+                margin-right: 50%;
+                list-style: none;
+                text-decoration: none; 
+                padding: 20px;
+                margin-right: 0;
+                margin-left: 0;}
+                .footer a{text-decoration: none;
+                color: white;}    
+              
+            }
