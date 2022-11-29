@@ -83,7 +83,7 @@
     margin-top: 10%;}
     
     .slide{margin-top: 10%;}
-    .slide img{height: fit-content;}
+
 
     .spotifyBanner{
     display: flex;
@@ -131,10 +131,8 @@
 
     .footer{display: flex;
         margin-top: auto;
-        margin-left: 35%;
-        margin-right: 35%;
         min-width: 400px;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         list-style: none;
         text-decoration: none; 
@@ -201,14 +199,11 @@
             justify-content: center;}
         
             .footer{display: flex;
-                position: relative;
                 bottom: auto;
-                justify-content: space-between;
+                justify-content: space-around;
                 align-items:center  ;
                 height: 100px;
                 width: 100%;
-                margin-right: auto;
-                margin-left: 12%;
                 list-style: none;
                 text-decoration: none; 
                 margin-right: auto;
@@ -219,14 +214,15 @@
               
               .tracklistPlayer, .spotifyBanner{
                 justify-content: space-between;
-                align-items: center;
                 margin-top: 5%;
                 flex-direction: column;
-                margin-left: 12%;}
-                .youtubeBanner,.youtubePlayer{margin-left: 22%;}
-
+                margin-left: 2%;}
+                .youtubeBanner,.youtubePlayer{margin-left: 12%;}
+                .carouselContenedor{justify-content: center;}
             .slide{display:flex;
-            margin-top: 350px;}
+            margin-top: 350px;
+            align-items: center;
+             justify-content: center;}
             form{margin-top: 10%;
                 margin-left: 12%;
                 width: 400px;
