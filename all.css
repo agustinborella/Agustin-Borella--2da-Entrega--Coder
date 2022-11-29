@@ -217,7 +217,7 @@
                 margin-top: 5%;
                 flex-direction: column;
                 margin-left: 2%;}
-                .youtubeBanner,.youtubePlayer{margin-left: 12%;}
+                .youtubeBanner,.youtubePlayer{margin-left: 2%;}
                 .carouselContenedor{justify-content: center;}
             .slide{display:flex;
             margin-top: 350px;
@@ -230,4 +230,5 @@
                 flex-direction: column;
                 justify-content: center;
                 }
+            #footermain{justify-content:first baseline}
             }
