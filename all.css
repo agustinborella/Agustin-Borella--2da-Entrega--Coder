@@ -6,7 +6,10 @@
     color: white;
     font-family: "Lexend", sans-serif ;
     overflow-x: auto;
-    overflow-y: auto;}
+    overflow-y: auto; 
+    min-height: 100vh;
+    display: flex;
+    flex-direction:column;}
     
     .header{background-color: black;
     color: white;
@@ -30,14 +33,15 @@
     .nav-link-icons{color: white;
         text-decoration: none;
     font-size: xx-large;
-    padding: 0 5px;}
+    padding: 0 5px;
+    margin-top: 25px;}
         
     
     .logo_name img{width: 300px;
         height: 33px;
     font-weight: bold;
     padding: 0 50px;
-    margin-top: 20px;
+    margin-top: 25px;
     line-height: 80px;}
     
     .nav-menu{display: flex;
@@ -45,17 +49,23 @@
     list-style: none;}
     
     .nav-menu-item{font-size: 18px;
-    margin: 0 10px;
+    margin: 0 2 px;
     line-height: 80px;
     text-transform: uppercase;
     width: max-content;}
     
     .nav-menu-link{padding: 8px 12px;
     border-radius: 3px;}
-    .nav-menu-link:hover{background-color: grey;
+    .nav-menu-link:hover{
+        color: grey;
     transition: 0.5s;}
     .nav-link-icons:hover{color: grey;
         transition: 0.5s;}
+    .footer a:hover{background-color: grey;
+        color: black;
+        transition: 0.5s;
+    border-radius: 3px;
+    max-width: 60px;}
     
     .nav-toggle{color: white;
     background: none;
@@ -71,20 +81,66 @@
     justify-content: center;
     align-items: center;
     margin-top: 10%;}
+    
+    .slide{margin-top: 10%;}
+    .slide img{height: fit-content;}
 
-    .footer{display: flex;
-    margin-bottom: 0%;
-    margin-left: 35%;
-    margin-right: 35%;
-    min-width: 400px;
+    .spotifyBanner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;}
+    
+    .youtubeBanner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7%;}
+    
+    .youtubePlayer{display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;}
+
+    .tracklist{text-decoration: none;
+    list-style:none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 4%;}
+    
+    .tracklistPlayer{
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    list-style: none;
-    text-decoration: none; 
-    padding: 20px;}
-    .footer a{text-decoration: none;
-    color: white;}    
+    margin-top: 5%;}
+    
+    form{margin-top: 10%;
+    margin-left: 35%;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
 
+    .formtitle{text-align: center;}
+    input,textarea{background-color: grey;}
+    ::placeholder{color: black;}
+
+    .footer{display: flex;
+        margin-top: auto;
+        margin-left: 35%;
+        margin-right: 35%;
+        min-width: 400px;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        text-decoration: none; 
+        padding: 20px;}
+        .footer a{text-decoration: none;
+        color: white;}    
 
     @media (max-width:668px){
             body{padding-top: 70px;}
@@ -104,6 +160,8 @@
             font-size: xx-large;
             padding: 0 5px;}
                 
+        .logo_name img{ margin-top: 10px;
+                        }
 
             .nav-menu{
             flex-direction: column;
@@ -116,7 +174,6 @@
             top: 60px;
             width:100%;
             padding: 0;
-            height: calc(100%-60px);
             overflow-y: auto;
             left: 100%;
             transition:left 0.3s;
@@ -144,6 +201,8 @@
             justify-content: center;}
         
             .footer{display: flex;
+                position: relative;
+                bottom: auto;
                 justify-content: space-between;
                 align-items:center  ;
                 height: 100px;
@@ -157,4 +216,20 @@
                 .footer a{text-decoration: none;
                 color: white;}    
               .footer li{justify-content: center;}
+              
+              .tracklistPlayer{
+                
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 5%;
+                flex-direction: column;}
+            .slide{display:flex;
+            margin-top: 350px;}
+            form{margin-top: 10%;
+                margin-left: 15%;
+                width: 400px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                }
             }
